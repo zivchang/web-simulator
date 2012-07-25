@@ -10,4 +10,5 @@ tags
 *.swp
 www/*
 build_output/
-pkg/*
+pkg
+plugins

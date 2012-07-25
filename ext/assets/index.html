@@ -16,11 +16,16 @@
 <!DOCTYPE html>
 <html manifest="cache.manifest">
     <head>
+        <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
         <link href="#URL_PREFIX#ripple.css" type="text/css" rel="stylesheet" />
     </head>
     <title>Web Simulator</title>
     <body>
-        <section id="ui" class="stage">
+        <section id="bus" style="display: none">
+        	<section id="bus-send"></section>
+        	<section id="bus-receive"></section>
+        </section>
+        <section id="ui">
             <section id="emulator-booting"></section>
             <section id="extension-url" class="irrelevant">#URL_PREFIX#</section>
             <section class="top main">
